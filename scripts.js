@@ -1,38 +1,40 @@
-// Basic client-side behavior for SimiVolunteering
+// Scroll event to add/remove 'visible' class to tags
+$(document).on("scroll", function () {
+var pageTop = $(document).scrollTop();
+var pageBottom = pageTop + $(window).height();
+var tags = $(".tag");
 
-// Set the year in the footer
-document.getElementById('year').textContent = new Date().getFullYear();
+// Loop through tags to check visibility
+for (var i = 0; i < tags.length; i++) {
+var tag = tags[i];
 
-// Form validation and fake submit handler
-(function () {
-  const form = document.getElementById('contactForm');
-  const alertEl = document.getElementById('formAlert');
+if ($(tag).position().top < pageBottom) {
+$(tag).addClass("visible");
+} else {
+$(tag).removeClass("visible");
+}
+}
+});
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    alertEl.textContent = '';
+// Disable right-click context menu
+document.addEventListener("contextmenu", function (e) {
+e.preventDefault();
+});
 
-    // HTML5 constraint validation API
-    if (!form.checkValidity()) {
-      form.classList.add('was-validated');
-      return;
-    }
+// Function to check for Ctrl + Shift + Key press
+function ctrlShiftKey(e, keyCode) {
+return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
 
-    // Simulate sending (replace with real API call if you add one)
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
-
-    // Simple visual feedback
-    alertEl.className = 'alert alert-info';
-    alertEl.textContent = 'Sending message...';
-
-    // Simulate network delay
-    setTimeout(() => {
-      alertEl.className = 'alert alert-success';
-      alertEl.textContent = `Thanks ${name || 'there'}! Your message was sent (simulated).`;
-      form.reset();
-      form.classList.remove('was-validated');
-    }, 900);
-  });
-})();
+// Prevent F12, Ctrl + Shift + I, J, C, and U
+document.onkeydown = function (e) {
+if (
+e.keyCode === 123 || // F12
+ctrlShiftKey(e, "I") || // Ctrl + Shift + I
+ctrlShiftKey(e, "J") || // Ctrl + Shift + J
+ctrlShiftKey(e, "C") || // Ctrl + Shift + C
+(e.ctrlKey && e.keyCode === "U".charCodeAt(0)) // Ctrl + U
+) {
+return false; // Prevent action
+}
+};
