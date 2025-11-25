@@ -1,0 +1,24 @@
+/* Custom styles for SimiVolunteering */
+
+/* Hero section */
+.hero {
+  background: linear-gradient(180deg, rgba(13,110,253,0.85), rgba(6,78,167,0.85)), url('https://source.unsplash.com/1600x900/?volunteer,community') center/cover no-repeat;
+  min-height: 56vh;
+  padding: 5rem 0;
+}
+
+/* Cards */
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Footer link colors */
+footer a {
+  color: #ffffffcc;
+}
+
+/* Small adjustments */
+body {
+  scroll-behavior: smooth;
+}
