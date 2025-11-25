@@ -1,153 +1,315 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SimiVolunteering</title>
+<title>Simi Volunteering</title>
+<meta name="google-site-verification" content="APvB4y3NJuRpUTJTtHsNc4YiTVZ9grcmeImXQo7NY_8" />
+<link
+rel="icon"
+href="https://i.ibb.co/ZzFYjj8/Screenshot-2024-10-16-212832.png"
+/>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta
+name="description"
+content="Here you can find volunteer opportunities in Simi Valley, keep track of your hours, and recruit volunteers for your business or non-profit."
+/>
+<meta
+name="keywords"
+content="volunteer opportunities in simi valley, simi valley, volunteer, simi volunteering, "
+/>
+<link rel="canonical" href="https://simivolunteering.glitch.me/" />
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta name="robots" content="index,follow" />
+<meta property="og:title" content="Simi Volunteering" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://simivolunteering.glitch.me/" />
+<meta
+property="og:description"
+content="Here you can find volunteer opportunities in Simi Valley, keep track of your hours, and recruit volunteers for your business or non-profit."
+/>
+<meta name="google-site-verification" content="DjlZ0vFEdv9mPdGnyY83i6ADUwUcR7ZmqSfSleodmKA" />
+<meta name="google-site-verification" content="DjlZ0vFEdv9mPdGnyY83i6ADUwUcR7ZmqSfSleodmKA" />
+<meta
+property="og:image"
+content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+/>
+<meta name="twitter:card" content="summary" />
+<!--Load external Bootstrap styles -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+crossorigin="anonymous"
+/>
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+/>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"
+></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="css/styles.css">
+<!-- Load external CSS styles -->
+<link rel="stylesheet" href="styles.css" />
+
+<!-- Fade in text when scroll -->
+<script></script>
 </head>
 <body>
+<div class="container-fluids">
+<!-- Load external JavaScript -->
+<script src="scripts.js"></script>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
-    <div class="container">
-      <a class="navbar-brand" href="#">SimiVolunteering</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md">
+<div class="container-fluid">
+<a class="navbar-brand active" href="#" aria-current="page">
+<img
+src="https://i.ibb.co/ZzFYjj8/Screenshot-2024-10-16-212832.png"
+alt="Logo"
+width="50px"
+height="50px"
+class="d-inline-block align-text-center"
+id="logo"
+/>
+Simi Volunteering
+</a>
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNavDropdown"
+aria-controls="navbarNavDropdown"
+aria-expanded="false"
+aria-label="Toggle navigation"
+>
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="volunteer.html"
+>Volunteer Opportunities
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="volunteer-descriptions.html"
+>Volunteer Descriptions
+</a>
+</li>
 
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Hero -->
-  <header class="hero d-flex align-items-center text-white">
-    <div class="container text-center">
-      <h1 class="display-5 fw-bold">Welcome to SimiVolunteering</h1>
-      <p class="lead mb-4">A minimal, responsive template for volunteering & community pages.</p>
-      <a href="#features" class="btn btn-lg btn-light">See Features</a>
-    </div>
-  </header>
+</ul>
+</div>
+</div>
+</nav>
 
-  <!-- Features -->
-  <section id="features" class="py-5">
-    <div class="container">
-      <h2 class="mb-4 text-center">Features</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://source.unsplash.com/800x600/?volunteer" class="card-img-top" alt="Feature 1">
-            <div class="card-body">
-              <h5 class="card-title">Community Driven</h5>
-              <p class="card-text">Highlight events, signups, and volunteer stories using a clean layout.</p>
-              <a href="#about" class="btn btn-primary btn-sm">Learn more</a>
-            </div>
-          </div>
-        </div>
+<div class="container">
+<div class="row">
+<!-- Header-->
+<div class="heading-animation">
+<div class="img-container img-fluid">
+<img
+class="inner-container img-fluid"
+src="https://www.simivalleyacorn.com/wp-content/uploads/images/2021-03-12/3p1.jpg"
+alt="simi valley sign"
+/>
+<div class="content">
+<h1 class="display-1 col-12 text-center" id="simi">
+Simi Volunteering
+</h1>
+</div>
 
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://source.unsplash.com/800x600/?help,community" class="card-img-top" alt="Feature 2">
-            <div class="card-body">
-              <h5 class="card-title">Easy to Customize</h5>
-              <p class="card-text">Separate CSS and JS let you adapt the site to events and campaigns quickly.</p>
-              <a href="#contact" class="btn btn-primary btn-sm">Contact us</a>
-            </div>
-          </div>
-        </div>
+</div>
 
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://source.unsplash.com/800x600/?teamwork" class="card-img-top" alt="Feature 3">
-            <div class="card-body">
-              <h5 class="card-title">Static & Fast</h5>
-              <p class="card-text">Static files mean simple hosting and fast load times (GitHub Pages friendly).</p>
-              <a href="#" class="btn btn-primary btn-sm">Get started</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- About -->
-  <section id="about" class="bg-light py-5">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-md-6">
-          <h2>About SimiVolunteering</h2>
-          <p class="mb-3">This template is a foundation for volunteer organizations to publish events,
-            signup info, and contact forms with minimal overhead.</p>
-          <ul>
-            <li>Bootstrap 5 via CDN</li>
-            <li>Custom styling in css/styles.css</li>
-            <li>Client-side form validation example</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <img src="https://source.unsplash.com/800x600/?volunteers,group" class="img-fluid rounded shadow-sm" alt="About image">
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Contact</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <form id="contactForm" novalidate>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input id="name" name="name" class="form-control" required>
-              <div class="invalid-feedback">Please enter your name.</div>
-            </div>
+<div id="line">
+<hr style="color: black" />
+</div>
+</div>
 
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input id="email" name="email" type="email" class="form-control" required>
-              <div class="invalid-feedback">Please enter a valid email.</div>
-            </div>
+</div>
 
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
-              <div class="invalid-feedback">Message can't be empty.</div>
-            </div>
+<div class="row">
+<div id="our-mission" class="tag col-12">
+<!-- Our mission -->
+<p class="h1 sec">Our mission</p>
+<p class="description">
+Simi Volunteering aims to make volunteering and helping others
+easy and simple in hope that you can make a difference in your
+community. Here you can find volunteer opportunities that are just
+right for you and if you are a business or non-profit; recruit
+volunteers.
+</p>
+</div>
 
-            <button type="submit" class="btn btn-primary">Send Message</button>
-            <div id="formAlert" class="mt-3" role="status" aria-live="polite"></div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+<div id="volunteer-opp" class="tag col-12">
+<!-- Featured volunteer opportunities -->
+<p class="h1 sec">Featured Volunteer Opportunities</p>
+</div>
+</div>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container text-center">
-      <p class="mb-1">&copy; <span id="year"></span> SimiVolunteering. All rights reserved.</p>
-      <small>Built with Bootstrap · Static HTML/CSS/JS</small>
-    </div>
-  </footer>
+<div class="container-fluid">
+<!-- Cards -->
+<div class="row">
+<div class="col-12 col-md-4">
+<a
+class="tag col-12 col-md-4"
+href="volunteer-descriptions.html#sewa"
+>
+<div class="card">
+<img
+class="card-bg"
+src="https://i0.wp.com/www.globalatlanta.com/wp-content/uploads/Sewa-int-logo.png?fit=1000%2C750&ssl=1"
+height="214.5px"
+width="286px"
+alt="sewa"
+/>
+<div class="card-body">
+<span class="card-title h5">Sewa</span>
+<p class="card-text">
+"We partner with food banks, food pantries, and local food
+programs to bring food..."
+</p>
+<br />
+<i class="bi bi-arrow-right-circle-fill"
+><span class="learn-more">Learn More</span></i
+>
+</div>
+</div>
+</a>
+</div>
 
-  <!-- Bootstrap JS Bundle (Popper included) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<div class="col-12 col-md-4">
+<a
+class="tag col-12 col-md-4"
+href="volunteer-descriptions.html#garden"
+>
+<div class="card">
+<img
+class="card-bg"
+src="https://static.wixstatic.com/media/9d3e86_cebe272ffe12496c925e31075ca68f79~mv2.jpeg/v1/fit/w_2500,h_1330,al_c/9d3e86_cebe272ffe12496c925e31075ca68f79~mv2.jpeg"
+height="214.5px"
+width="214.5px"
+alt="simi at the garden"
+/>
+<div class="card-body">
+<span class="card-title h5">Simi at the Garden</span>
+<p class="card-text">
+"Simi at the Garden is an ongoing community garden project
+providing environmental..."
+</p>
+<br />
+<i class="bi bi-arrow-right-circle-fill"
+><span class="learn-more">Learn More</span></i
+>
+</div>
+</div>
+</a>
+</div>
 
-  <!-- Custom JS -->
-  <script src="js/script.js"></script>
+<div class="col-12 col-md-4">
+<a
+class="tag col-12 col-md-4"
+href="volunteer-descriptions.html#running-rebels"
+>
+<div class="card">
+<img
+class="card-bg"
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4ROoHowAW0axkmwucpQJ07cZh9jlDexKcg&s"
+height="214.5px"
+width="286px"
+alt="running rebels"
+/>
+<div class="card-body">
+<span class="card-title h5"
+>Simi Valley Historical Society</span
+>
+<p class="card-text">
+"Provide tours on the history of Simi Valley and assist
+with..."
+</p>
+<br />
+<i class="bi bi-arrow-right-circle-fill"
+><span class="learn-more">Learn More</span></i
+>
+</div>
+</div>
+</a>
+</div>
+
+<div class="col-12">
+<a class="tag col-12 col-md-4" href="volunteer.html">
+<div class="card view-more">
+<div class="card-body">
+<i class="bi bi-arrow-right-circle-fill"
+><span class="learn-more card-title h5"
+>View More Volunteer Opportunities</span
+></i
+>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<footer class="tag col-12">
+<div class="container-fluid text-center">
+<div class="row g-0">
+<div class="col-6">
+<ul class="sitemap tag">
+<li class="d-block text-light">
+<span id="strong">Website</span>
+</li>
+<hr />
+<li class="d-block text-light">
+<a class="website" href="#our-mission">Our Mission</a>
+</li>
+<li class="d-block text-light">
+<a class="website" href="#volunteer-opp"
+>Featured Volunteer Opportunities</a
+>
+</li>
+<li class="d-block text-light">
+<a class="website" href="#"
+>Volunteer Opportunities Catalog</a
+>
+</li>
+
+</ul>
+</div>
+
+<div class="col-6">
+<ul class="sitemap tag">
+<li class="d-block text-light">
+<span id="strong">Contact</span>
+</li>
+<hr />
+<li class= "d-block text-light">
+    Created by James Lequang
+<li class="d-block text-light">
+<a class="website" href="#"
+>Email is:
+<a
+class="email"
+input-type="email"
+href="mailto: j.lequang229959@simivalleyusd.org"
+>j.lequang229959@simivalleyusd.org</a
+></a
+>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
 </body>
 </html>
